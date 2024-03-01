@@ -1,0 +1,69 @@
+{
+  "DMM": {
+    "gd906x": {
+      "register": "*IDN?",
+      "reset": "*RST",
+      "conf": "CONF:{MODE}:{TYPE}",
+      "samp": "SAMP:COUN {COUNT}",
+      "trig": "TRIG:SOUR {TRIG}",
+      "range": "SENS:{MODE}:{TYPE}:RANG {RANGE}",
+      "read": "READ?"
+    }
+  },
+  "POWER": {
+    "gpp6030": {
+      "register": "*IDN?",
+      "reset": "*RST",
+      "setchvol": ":SOURce{CH}:VOLTage {VOLT}",
+      "setchcur": ":SOURce{CH}:CURRent {CURR}",
+      "setload": ":LOAD{CH}:{MODE} ON",
+      "iset": "ISET{CH}:{CURR}",
+      "outputstate": ":OUTPut{CH}:STATe {STATE}"
+    },
+    "DP831": {
+      "register": "*IDN?",
+      "reset": "*RST",
+      "measure": ":MEASure:{TYPE}? CH{CH}",
+      "setchvol": ":SOURce{CH}:VOLTage {VOLT}",
+      "setchcur": ":SOURce{CH}:CURRent {CURR}",
+      "outputstate": ":OUTPut {CH},{STATE}"
+    },
+    "DP821": {
+      "register": "*IDN?",
+      "reset": "*RST",
+      "measure": ":MEASure:{TYPE}? CH{CH}",
+      "setchvol": ":SOURce{CH}:VOLTage {VOLT}",
+      "setchcur": ":SOURce{CH}:CURRent {CURR}",
+      "outputstate": ":OUTPut {CH},{STATE}"
+    }
+  },
+  "LOAD": {
+    "3021": {
+      "register": "*IDN?",
+      "reset": "*RST",
+      "sourfunc" : ":SOUR:FUNC {TYPE}",
+      "soursetval": ":{TYPE}:LEV:IMM {VAL}",
+      "inputstate": ":SOUR:INPut {STATE}"
+    }
+  },
+  "MOS": {
+    "4S": {
+
+    }
+  },
+  "SMU": {
+    "2450": {
+      "register": "*IDN?",
+      "reset": "*RST",
+      "sourfunc" : ":SOUR:FUNC {TYPE}",
+      "soursetval": ":SOUR:{TYPE} {VAL}",
+      "soursetlimit": ":SOUR:{TYPE}:{LIMIT} {VAL}",
+      "soursetrange": ":SOUR:{TYPE}:RANG:{RANGE}",
+      "sensefunc": "SENSE:FUNC {TYPE}",
+      "sensesetrange": "SENSE:{TYPE}:RANG:{RANGE}",
+      "sensesetnplc": "SENSE:{TYPE}:NPLC {VAL}",
+      "outputstate": ":OUTP {STATE}",
+      "read": "READ?"
+    }
+  }
+}
